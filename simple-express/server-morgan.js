@@ -10,7 +10,7 @@ var app = express();
 
 app.use(morgan('dev', {
     skip: function (req, res) {
-        return res.statusCode < 400;
+        return q.statusCode < 400;
     }
 }));
 
